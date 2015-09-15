@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		865FF6731BA88DCF0026D08E /* Animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 865FF6721BA88DCF0026D08E /* Animals.json */; settings = {ASSET_TAGS = (); }; };
+		865FF6751BA88E880026D08E /* Animals.json in Resources */ = {isa = PBXBuildFile; fileRef = 865FF6741BA88E880026D08E /* Animals.json */; settings = {ASSET_TAGS = (); }; };
 		86D814AF1BA7781900EB2F26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D814AE1BA7781900EB2F26 /* AppDelegate.swift */; };
 		86D814B41BA7781900EB2F26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D814B21BA7781900EB2F26 /* Main.storyboard */; };
 		86D814B61BA7781900EB2F26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86D814B51BA7781900EB2F26 /* Assets.xcassets */; };
@@ -30,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		865FF6721BA88DCF0026D08E /* Animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Animals.json; path = ../../../../../Downloads/Animals.json; sourceTree = "<group>"; };
+		865FF6741BA88E880026D08E /* Animals.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Animals.json; sourceTree = "<group>"; };
 		86D814AB1BA7781900EB2F26 /* ImaginaryAnimalsLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImaginaryAnimalsLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D814AE1BA7781900EB2F26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86D814B31BA7781900EB2F26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,7 +85,7 @@
 		86D814AD1BA7781900EB2F26 /* ImaginaryAnimalsLister */ = {
 			isa = PBXGroup;
 			children = (
-				865FF6721BA88DCF0026D08E /* Animals.json */,
+				865FF6741BA88E880026D08E /* Animals.json */,
 				86D814AE1BA7781900EB2F26 /* AppDelegate.swift */,
 				86D814D01BA779C100EB2F26 /* TableViewController.swift */,
 				86D814D61BA78B5C00EB2F26 /* DetailViewController.swift */,
@@ -189,7 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86D814B91BA7781900EB2F26 /* LaunchScreen.storyboard in Resources */,
-				865FF6731BA88DCF0026D08E /* Animals.json in Resources */,
+				865FF6751BA88E880026D08E /* Animals.json in Resources */,
 				86D814B61BA7781900EB2F26 /* Assets.xcassets in Resources */,
 				86D814B41BA7781900EB2F26 /* Main.storyboard in Resources */,
 			);
