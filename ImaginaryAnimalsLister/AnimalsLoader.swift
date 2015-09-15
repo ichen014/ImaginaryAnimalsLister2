@@ -18,18 +18,19 @@ struct AnimalsLoader {
         guard let url = NSBundle.mainBundle().URLForResource("Animals", withExtension: "json"),
         let data = NSData(contentsOfURL: url),
             let jsonArray = try? NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(rawValue: 0)) as? [AnyObject] else {
-                fatalError("Couldn't load or parse file")
+//                fatalError("Couldn't load or parse file")
                 return animalsArray //Bailing out
         }
                 //as? (conditionally casting) of a type of AnyObject.
                 //try! (force try) if there's an error, crash.
                 //try? Bails if there's an error
-                //option click, if it "throws", then need a "try". 
+                //option click, if it "throws", then need a "try".
                 
         if let jsonArray:[AnyObject] = jsonArray {
             for animalJson in jsonArray {
-                let animal = ImaginaryAnimal(fromJson: animalsJson)
-                animalsArray.append(animal)
+                if let animal = ImaginaryAnimal(fromJSON: animalJson) {
+                    animalsArray.append(animal)
+                }
             }
             
         }
