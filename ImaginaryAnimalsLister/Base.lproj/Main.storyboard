@@ -69,8 +69,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8oc-9T-in3">
-                                <rect key="frame" x="16" y="188" width="288" height="272"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8oc-9T-in3">
+                                <rect key="frame" x="16" y="199.5" width="288" height="260.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="8oc-9T-in3" secondAttribute="height" multiplier="35:34" id="4rK-fK-Nvz"/>
                                 </constraints>
@@ -98,7 +98,7 @@
                             <constraint firstItem="AjE-mh-bgQ" firstAttribute="leading" secondItem="9XU-Xn-Sof" secondAttribute="leading" id="enm-q7-MJ8"/>
                             <constraint firstItem="FFz-Dc-MPj" firstAttribute="top" secondItem="gfQ-Lt-t5m" secondAttribute="bottom" constant="8" id="gOA-ZA-BBx"/>
                             <constraint firstItem="FFz-Dc-MPj" firstAttribute="leading" secondItem="z0x-VN-DA5" secondAttribute="leadingMargin" id="l49-5s-hMl"/>
-                            <constraint firstItem="8oc-9T-in3" firstAttribute="top" secondItem="AjE-mh-bgQ" secondAttribute="bottom" constant="8.5" id="ode-zU-765"/>
+                            <constraint firstItem="8oc-9T-in3" firstAttribute="top" secondItem="AjE-mh-bgQ" secondAttribute="bottom" constant="20" id="ode-zU-765"/>
                             <constraint firstItem="9XU-Xn-Sof" firstAttribute="leading" secondItem="eX2-vq-PDD" secondAttribute="leading" id="oeJ-mU-tgc"/>
                             <constraint firstItem="eX2-vq-PDD" firstAttribute="leading" secondItem="FFz-Dc-MPj" secondAttribute="leading" id="thz-8j-VmK"/>
                         </constraints>
