@@ -19,13 +19,22 @@ class DetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let url = animal?.imageURL,
-            let imageData = NSData(contentsOfURL: url) {
-                self.imageView.image = UIImage(data: imageData)
-        }
+//        if let url = animal?.imageURL,
+//            let imageData = NSData(contentsOfURL: url) {
+//                self.imageView.image = UIImage(data: imageData)
+//        }
         nameLabel.text = "Name: \(animal!.name)"
         heightLabel.text = "Height: \(String(animal!.height))"
         locationLabel.text = "Location: \(animal!.location)"
         dateLastSeenLabel.text = "Date last seen: \(animal!.dateLastSeen)"
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        //is faster loading the image here? Vs up there ^
+        if let url = animal?.imageURL,
+            let imageData = NSData(contentsOfURL: url) {
+                self.imageView.image = UIImage(data: imageData)
+        }
     }
 }
