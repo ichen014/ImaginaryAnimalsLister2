@@ -8,6 +8,29 @@
 
 import UIKit
 
+class LoadingImageOperation : NSOperation
+
+{
+    var animal : ImaginaryAnimal?
+    var animalImageView : UIImageView
+    
+    init(imaginaryAnimal: ImaginaryAnimal, animalImageView: UIImageView)
+    {
+        self.animal = imaginaryAnimal
+        self.animalImageView = animalImageView
+        
+    }
+    
+    override func main() {
+        if let url = self.animal?.imageURL,
+            let imageData = NSData(contentsOfURL: url) {
+                NSOperationQueue.mainQueue().addOperationWithBlock() {
+                    self.animalImageView.image = UIImage(data: imageData)
+                }
+        }
+    }
+}
+
 class DetailViewController: UIViewController {
 
     var animal: ImaginaryAnimal?
@@ -32,15 +55,25 @@ class DetailViewController: UIViewController {
     }
     
    func loadImage() {
+    
+//    let loadingBlock = NSBlockOperation()
+//    loadingBlock.qualityOfService = NSQualityOfService.UserInitiated
+    let queue = NSOperationQueue()
+    let operation = NSBlockOperation { ()
+//    NSOperationQueue().addOperation(loadingBlock) { ()
+        -> Void in
+
         //is faster loading the image here? Vs up there ^
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { ()
-            -> Void in
+//        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)) { ()
+//            -> Void in
             if let url = self.animal?.imageURL,
                 let imageData = NSData(contentsOfURL: url) {
-                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    NSOperationQueue.mainQueue().addOperationWithBlock { () -> Void in
                         self.imageView.image = UIImage(data: imageData)
-                    })
+                    }
             }
         }
+    operation.qualityOfService = NSQualityOfService.UserInitiated
+    queue.addOperation(operation)
     }
 }
