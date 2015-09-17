@@ -16,7 +16,7 @@
 		86D814D31BA7805400EB2F26 /* ImaginaryAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D814D21BA7805400EB2F26 /* ImaginaryAnimal.swift */; settings = {ASSET_TAGS = (); }; };
 		86D814D51BA7883700EB2F26 /* AnimalsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D814D41BA7883700EB2F26 /* AnimalsLoader.swift */; settings = {ASSET_TAGS = (); }; };
 		86D814D71BA78B5C00EB2F26 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D814D61BA78B5C00EB2F26 /* DetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		86EB15CB1BAB3CDD00C796A1 /* TableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EB15CA1BAB3CDD00C796A1 /* TableViewControllerTests.swift */; settings = {ASSET_TAGS = (); }; };
+		86EB15CD1BAB43A900C796A1 /* TableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EB15CC1BAB43A900C796A1 /* TableViewControllerTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,8 @@
 		86D814D21BA7805400EB2F26 /* ImaginaryAnimal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImaginaryAnimal.swift; sourceTree = "<group>"; };
 		86D814D41BA7883700EB2F26 /* AnimalsLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsLoader.swift; sourceTree = "<group>"; };
 		86D814D61BA78B5C00EB2F26 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		86EB15CA1BAB3CDD00C796A1 /* TableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerTests.swift; sourceTree = "<group>"; };
+		86EB15CC1BAB43A900C796A1 /* TableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerTests.swift; sourceTree = "<group>"; };
+		86EB15CE1BAB444600C796A1 /* ImaginaryAnimalsListerTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImaginaryAnimalsListerTests-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				86D814C51BA7781900EB2F26 /* Info.plist */,
-				86EB15CA1BAB3CDD00C796A1 /* TableViewControllerTests.swift */,
+				86EB15CC1BAB43A900C796A1 /* TableViewControllerTests.swift */,
+				86EB15CE1BAB444600C796A1 /* ImaginaryAnimalsListerTests-Bridging-Header.h */,
 			);
 			path = ImaginaryAnimalsListerTests;
 			sourceTree = "<group>";
@@ -223,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86EB15CB1BAB3CDD00C796A1 /* TableViewControllerTests.swift in Sources */,
+				86EB15CD1BAB43A900C796A1 /* TableViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
