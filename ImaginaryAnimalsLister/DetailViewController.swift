@@ -31,6 +31,7 @@ class DetailViewController: UIViewController {
             dateLastSeenLabel.text = "Date last seen: \(animal.dateLastSeen)"
 //          loadImage() --- use subclassed imageView instead, handles loading on didSet
             imageView.url = animal.imageURL
+            imageView.accessibilityIdentifier = "DetailImageView"
         }
     }
     

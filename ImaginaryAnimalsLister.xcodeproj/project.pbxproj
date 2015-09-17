@@ -18,10 +18,18 @@
 		86D814D51BA7883700EB2F26 /* AnimalsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D814D41BA7883700EB2F26 /* AnimalsLoader.swift */; };
 		86D814D71BA78B5C00EB2F26 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D814D61BA78B5C00EB2F26 /* DetailViewController.swift */; };
 		86EB15CD1BAB43A900C796A1 /* TableViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EB15CC1BAB43A900C796A1 /* TableViewControllerTests.swift */; };
+		86EB15D61BAB592700C796A1 /* ImaginaryAnimalsListerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EB15D51BAB592700C796A1 /* ImaginaryAnimalsListerUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		86D814C01BA7781900EB2F26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86D814A31BA7781900EB2F26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86D814AA1BA7781900EB2F26;
+			remoteInfo = ImaginaryAnimalsLister;
+		};
+		86EB15D81BAB592700C796A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 86D814A31BA7781900EB2F26 /* Project object */;
 			proxyType = 1;
@@ -47,6 +55,9 @@
 		86D814D61BA78B5C00EB2F26 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		86EB15CC1BAB43A900C796A1 /* TableViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerTests.swift; sourceTree = "<group>"; };
 		86EB15CE1BAB444600C796A1 /* ImaginaryAnimalsListerTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ImaginaryAnimalsListerTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		86EB15D31BAB592700C796A1 /* ImaginaryAnimalsListerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImaginaryAnimalsListerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86EB15D51BAB592700C796A1 /* ImaginaryAnimalsListerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImaginaryAnimalsListerUITests.swift; sourceTree = "<group>"; };
+		86EB15D71BAB592700C796A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +75,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86EB15D01BAB592700C796A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -72,6 +90,7 @@
 			children = (
 				86D814AD1BA7781900EB2F26 /* ImaginaryAnimalsLister */,
 				86D814C21BA7781900EB2F26 /* ImaginaryAnimalsListerTests */,
+				86EB15D41BAB592700C796A1 /* ImaginaryAnimalsListerUITests */,
 				86D814AC1BA7781900EB2F26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +100,7 @@
 			children = (
 				86D814AB1BA7781900EB2F26 /* ImaginaryAnimalsLister.app */,
 				86D814BF1BA7781900EB2F26 /* ImaginaryAnimalsListerTests.xctest */,
+				86EB15D31BAB592700C796A1 /* ImaginaryAnimalsListerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +131,15 @@
 				86EB15CE1BAB444600C796A1 /* ImaginaryAnimalsListerTests-Bridging-Header.h */,
 			);
 			path = ImaginaryAnimalsListerTests;
+			sourceTree = "<group>";
+		};
+		86EB15D41BAB592700C796A1 /* ImaginaryAnimalsListerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				86EB15D51BAB592700C796A1 /* ImaginaryAnimalsListerUITests.swift */,
+				86EB15D71BAB592700C796A1 /* Info.plist */,
+			);
+			path = ImaginaryAnimalsListerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +180,24 @@
 			productReference = 86D814BF1BA7781900EB2F26 /* ImaginaryAnimalsListerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		86EB15D21BAB592700C796A1 /* ImaginaryAnimalsListerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86EB15DC1BAB592700C796A1 /* Build configuration list for PBXNativeTarget "ImaginaryAnimalsListerUITests" */;
+			buildPhases = (
+				86EB15CF1BAB592700C796A1 /* Sources */,
+				86EB15D01BAB592700C796A1 /* Frameworks */,
+				86EB15D11BAB592700C796A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86EB15D91BAB592700C796A1 /* PBXTargetDependency */,
+			);
+			name = ImaginaryAnimalsListerUITests;
+			productName = ImaginaryAnimalsListerUITests;
+			productReference = 86EB15D31BAB592700C796A1 /* ImaginaryAnimalsListerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -166,6 +213,10 @@
 						DevelopmentTeam = 2PWDC2F832;
 					};
 					86D814BE1BA7781900EB2F26 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 86D814AA1BA7781900EB2F26;
+					};
+					86EB15D21BAB592700C796A1 = {
 						CreatedOnToolsVersion = 7.0;
 						TestTargetID = 86D814AA1BA7781900EB2F26;
 					};
@@ -186,6 +237,7 @@
 			targets = (
 				86D814AA1BA7781900EB2F26 /* ImaginaryAnimalsLister */,
 				86D814BE1BA7781900EB2F26 /* ImaginaryAnimalsListerTests */,
+				86EB15D21BAB592700C796A1 /* ImaginaryAnimalsListerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -203,6 +255,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		86D814BD1BA7781900EB2F26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86EB15D11BAB592700C796A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -233,6 +292,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		86EB15CF1BAB592700C796A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86EB15D61BAB592700C796A1 /* ImaginaryAnimalsListerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +307,11 @@
 			isa = PBXTargetDependency;
 			target = 86D814AA1BA7781900EB2F26 /* ImaginaryAnimalsLister */;
 			targetProxy = 86D814C01BA7781900EB2F26 /* PBXContainerItemProxy */;
+		};
+		86EB15D91BAB592700C796A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86D814AA1BA7781900EB2F26 /* ImaginaryAnimalsLister */;
+			targetProxy = 86EB15D81BAB592700C796A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -401,6 +473,30 @@
 			};
 			name = Release;
 		};
+		86EB15DA1BAB592700C796A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ImaginaryAnimalsListerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MathNotRequired.ImaginaryAnimalsListerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ImaginaryAnimalsLister;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		86EB15DB1BAB592700C796A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ImaginaryAnimalsListerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = MathNotRequired.ImaginaryAnimalsListerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ImaginaryAnimalsLister;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -430,6 +526,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		86EB15DC1BAB592700C796A1 /* Build configuration list for PBXNativeTarget "ImaginaryAnimalsListerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86EB15DA1BAB592700C796A1 /* Debug */,
+				86EB15DB1BAB592700C796A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
