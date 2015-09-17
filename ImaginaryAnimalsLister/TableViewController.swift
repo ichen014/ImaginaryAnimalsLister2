@@ -8,36 +8,17 @@
 
 import UIKit
 
-class TableViewController: UITableViewController {
+struct MyAnimalsLoader: AnimalsLoader {
+    var url:NSURL? = NSURL(string: "http://charliewilliams.org/SwiftBootcamp/Animals.json")
+}
 
-    //deleted
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        // Uncomment the following line to preserve selection between presentations
-//        // self.clearsSelectionOnViewWillAppear = false
-//
-//        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-//        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-//    }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
+class TableViewController: UITableViewController {
 
     var animalsArray:[ImaginaryAnimal]
     
     required init?(coder aDecoder: NSCoder){ //a failable initializer, because our super init is optional.
-        
-//        let testAnimal = ImaginaryAnimal(name: "Dragon",
-//            height: 150.5,
-//            location: "Oceans",
-//            dateLastSeen: "1858",
-//            imageURL: nil)
-//        animalsArray = [testAnimal]
-//        animalsArray = []
-        animalsArray = AnimalsLoader().loadAnimals()
+
+        animalsArray = MyAnimalsLoader().loadAnimals()
         super.init(coder: aDecoder)
     }
     // MARK: - Table view data source

@@ -8,15 +8,21 @@
 
 import Foundation
 
-struct AnimalsLoader {
+protocol AnimalsLoader {
+    func loadAnimals() -> [ImaginaryAnimal]
+    var url:NSURL? { get }
+}
+
+extension AnimalsLoader { //protocol extension, and makes some of the defaults.
     
     func loadAnimals() -> [ImaginaryAnimal] { //doesn't need the import file. Have to mark as private, or else mostly public.
         
         var animalsArray = [ImaginaryAnimal]()
         
         //the if to prevent nil, guard else, where guard makes sure all are true, bails to else if any are false. An "inverted if", else is always required with that.
-        guard let url = NSURL(string: "http://charliewilliams.org/SwiftBootcamp/Animals.json"),
+//        guard let url = NSURL(string: "http://charliewilliams.org/SwiftBootcamp/Animals.json"),
 //        guard let url = NSBundle.mainBundle().URLForResource("Animals", withExtension: "json"),
+        guard let url = url,
         let data = NSData(contentsOfURL: url),
             let jsonArray = try? NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(rawValue: 0)) as? [AnyObject] else {
 //                fatalError("Couldn't load or parse file")
